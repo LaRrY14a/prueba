@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="8dp"
+    tools:context=".CorreosActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bandeja de entrada"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center" />
+
+    <!-- Lista de Correos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_correos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <!-- Botón para redactar correo -->
+    <Button
+        android:id="@+id/btn_redactar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redactar correo"
+        android:backgroundTint="@color/primary" />
+</LinearLayout>
+
